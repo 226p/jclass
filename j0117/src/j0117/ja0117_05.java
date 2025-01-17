@@ -1,6 +1,6 @@
 package j0117;
 
-public class ja01117_05 {
+public class ja0117_05 {
 
 	public static void main(String[] args) {
 		// 객체선언(배열방법)
