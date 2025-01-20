@@ -9,10 +9,10 @@ public class ja0120_11 {
 		
 		StuScore[] s = new StuScore[10];
 		int[] score = new int[3];
-		int no=0, kor=0, eng=0, math=0, total=0, choice=0, count=0;  // 메인메소드 지역변수 꼭 초기화해줘야 함!!
+		int no=0, kor=0, eng=0, math=0, total=0, choice=0, count=0, rank=0;  // 메인메소드 지역변수 꼭 초기화해줘야 함!!
 		String name;
 		double avg;
-		int temp=0;
+		int temp=0, rankC=0;
 		
 		String[] title = {"번호","이름","국어","영어","수학","합계","평균","등수"};
 		
@@ -21,6 +21,7 @@ public class ja0120_11 {
 			System.out.println("1. 성적입력");
 			System.out.println("2. 성적출력");
 			System.out.println("3. 성적수정");
+			System.out.println("4. 등수처리");
 			System.out.println("0. 프로그램 수정");
 			System.out.println("-----------------------------------");
 			System.out.println("원하는 번호를 입력하세요. >>");
@@ -124,11 +125,26 @@ public class ja0120_11 {
 							s[i].total = s[i].kor+s[i].eng+s[i].math;
 							s[i].avg = s[i].total/3.0;
 						}else{
-							System.out.printf("%s 님의 정보를 찾을 수 없습니다.",name);
+							System.out.printf("%s 님의 정보를 찾을 수 없습니다.\n",name);
 							break;
 						} // if절
 						
 					}
+					break;
+				}
+				
+				case 4:{
+					System.out.println("[ 등수처리 ]");
+					for(int i=0;i<count;i++) {
+						rankC = 1;
+						for(int j=0;j<count;j++) {
+							if(s[i].total<s[j].total) {
+								rankC++;
+							}
+						}
+						s[i].rank = rankC;
+					}
+					System.out.println("등수처리가 완료되었습니다.");
 					break;
 				}
 				
@@ -142,9 +158,9 @@ public class ja0120_11 {
 				
 				
 				
-			}
+			} // switch문
 			
-		}
+		} // while:loop
 		
 
 	}
