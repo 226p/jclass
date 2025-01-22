@@ -2,7 +2,7 @@ package jbuy;
 
 import java.util.ArrayList;
 
-public class Buyer {
+class Buyer {
 	int money = 10000000;
 	int bonusPoint = 0;
 	int total = 0;
@@ -19,7 +19,7 @@ public class Buyer {
 	// 나의 정보 메소드
 	void myInfo() {
 		System.out.printf("[ 보유금액 : %,d ]\n",money);
-		System.out.printf("[ 보유금액 : %,d ]\n",bonusPoint);
+		System.out.printf("[ 보유포인트 : %,d ]\n",bonusPoint);
 	}
 	
 	void aaa() {} // 완성 메소드

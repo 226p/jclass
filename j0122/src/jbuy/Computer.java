@@ -1,6 +1,6 @@
 package jbuy;
 
-public class Computer extends Product {
+class Computer extends Product {
 	Computer() {
 		name = "Computer";
 		price = 2000000;
