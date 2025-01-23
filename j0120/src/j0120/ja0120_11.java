@@ -22,7 +22,7 @@ public class ja0120_11 {
 			System.out.println("2. 성적출력");
 			System.out.println("3. 성적수정");
 			System.out.println("4. 등수처리");
-			System.out.println("0. 프로그램 수정");
+			System.out.println("0. 프로그램 종료");
 			System.out.println("-----------------------------------");
 			System.out.println("원하는 번호를 입력하세요. >>");
 			choice = scan.nextInt();
