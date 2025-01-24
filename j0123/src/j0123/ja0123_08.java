@@ -16,7 +16,7 @@ public class ja0123_08 {
 		
 		System.out.println("갯수 : "+set.size());
 		
-		Iterator i = set.iterator();
+		Iterator i = set.iterator();  // 1회성
 		while(i.hasNext()) {
 			System.out.println(i.next());  // 1,2,3,4로 출력(데이터 넣은 순서(2,3,4,1)대로 출력되지 않음)
 		}
