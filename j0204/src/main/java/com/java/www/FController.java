@@ -18,7 +18,7 @@ public class FController extends HttpServlet {
 		String uri = request.getRequestURI();
 		String uPath = request.getContextPath();
 		String fileName = uri.substring(uPath.length()+1);
-		String[] fName = fileName.split(".");
+		String[] fName = fileName.split("\\.");
 		
 		
 		System.out.println("uri : "+uri);
